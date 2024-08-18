@@ -49,3 +49,24 @@ print(len("python") != len("dragon"))
 result = "on" in "python" and "on" in "dragon"
 print(result)
 ```
+
+### 8. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+
+```python
+# Definimos la pendiente (m) y el intercepto en y (b) de la ecuación y = mx + b
+m = 2  # Pendiente de la ecuación, que es 2 en este caso
+b = -2  # Intercepto en y, que es -2 en este caso
+
+# Calcular el intercepto en y
+y_intercept = (0, b)  # El intercepto en y ocurre cuando x = 0, así que es (0, -2)
+
+# Calcular el intercepto en x
+# Para encontrar el intercepto en x, establecemos y = 0 y resolvemos para x
+# La ecuación era 0 = 2x - 2, entonces x = 1
+x_intercept = (1, 0) if m != 0 else "No tiene intercepto en x"
+
+# Mostrar resultados
+print(f"Pendiente: {m}")  # Imprime la pendiente
+print(f"Intercepto en y: {y_intercept}")  # Imprime el intercepto en y
+print(f"Intercepto en x: {x_intercept}")  # Imprime el intercepto en x
+```
