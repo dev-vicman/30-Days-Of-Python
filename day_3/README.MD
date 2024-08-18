@@ -70,3 +70,47 @@ print(f"Pendiente: {m}")  # Imprime la pendiente
 print(f"Intercepto en y: {y_intercept}")  # Imprime el intercepto en y
 print(f"Intercepto en x: {x_intercept}")  # Imprime el intercepto en x
 ```
+### 9. Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)
+```python
+# Puntos dados
+x1, y1 = 2, 2
+x2, y2 = 6, 10
+
+# Calcular la pendiente
+m = (y2 - y1) / (x2 - x1)
+
+# Calcular la distancia euclidiana
+d = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
+# Mostrar los resultados
+print(f"Pendiente: {m}")
+print(f"Distancia Euclidiana: {d:.2f}")
+```
+### 10. I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.
+
+```python
+sentece = "I hope this course is not full of jargon"
+print("jargon" in sentece)
+```
+
+### 11. There is no 'on' in both dragon and python
+
+```python
+result = "on" not in "python" and "on" in "dragon"
+print(result)
+```
+
+### 12. Find the length of the text python and convert the value to float and convert it to string
+
+```python
+convert = str(float(len("python")))
+print(convert,type(convert))
+```
+
+### 13. Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?
+
+```python
+numero = 5
+numero_es_divisible = numero % 2 == 0
+print(f"El numero es divisible entre 2: {numero_es_divisible}")
+```
