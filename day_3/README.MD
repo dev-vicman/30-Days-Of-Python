@@ -1,0 +1,2 @@
+# 💻 Exercises - Day 3
+
