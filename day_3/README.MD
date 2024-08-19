@@ -162,3 +162,28 @@ segundos_vividos = años_vividos * 365 * 24 * 60 * 60
 # Mostrar el resultado
 print(f"Has vivido durante {segundos_vividos} segundos.")
 ```
+
+### 19. Write a Python script that displays the following table
+
+```python
+# Fila 1
+a = 1
+b = 1
+print(a, b, a**b, a**2, a**3)
+
+# Fila 2
+a = 2
+print(a, b, a**b, a**2, a**3)
+
+# Fila 3
+a = 3
+print(a, b, a**b, a**2, a**3)
+
+# Fila 4
+a = 4
+print(a, b, a**b, a**2, a**3)
+
+# Fila 5
+a = 5
+print(a, b, a**b, a**2, a**3)
+```
