@@ -93,7 +93,7 @@ palabras = frase.split(" ")
 acronimo = '{}{}{}'.format(palabras[0][:1],palabras[1][:1],palabras[2][:1]).upper()
 
 # Mostramos en pantalla
-print(acronimo)
+print(acronimo) # PPT
 # %%
 # 18. Crea un acrónimo o una abreviatura para el nombre 'Coding For All'.
 
@@ -107,5 +107,64 @@ palabras = frase.split(" ")
 acronimo = '{}{}{}'.format(palabras[0][:1],palabras[1][:1],palabras[2][:1]).upper()
 
 # Mostramos en pantalla
-print(acronimo)
+print(acronimo) # CFA
+
 # %%
+# 19. Utilice el índice para determinar la posición de la primera aparición de C en Codificación para todos.
+frase = "Codificación para todos"
+print(frase.find("C")) # 0
+
+# 20. Utilice el índice para determinar la posición de la primera aparición de F en Codificación para todos.
+
+print(frase.find("F")) # -1 -> No se encuentra la 'F' ya que el lenguaje distingue minusculas de mayusculas. Asi que haremos una modificacion para que pueda encontrar la "F o f"
+
+print(frase.upper().find("F")) # 4 -> transformando toda la cadena a mayusculas es posible encontrar la "F"
+
+# %%
+# 20. Utilice rfind para determinar la posición de la última aparición de l en Coding For All People.
+
+frase = "Coding For All People"
+print(frase.lower().rfind("l")) # 19 -> como en el ejercio anterior llevamos todos los caracteres a minuscula para encontrar la letra deseada sin distincion entre caracter mayuscula o miniscula.
+
+
+# %%
+# 21. Utilice index o find para encontrar la posición de la primera aparición de la palabra 'porque' en la siguiente oración: 'No puedes terminar una oración con porque porque porque es una conjunción'
+
+frase = "No puedes terminar una oración con porque porque porque es una conjunción"
+
+print(frase.find("porque")) # 35
+
+# 22. Elimina la frase 'porque porque porque' de la siguiente oración: 'No puedes terminar una oración con porque porque porque es una conjunción'
+
+print(frase.replace("porque porque porque ","")) # No puedes terminar una oración con es una conjunción
+# %%
+# 23. ¿''Coding For All' comienza con una subcadena Coding ?
+
+frase = "Coding For All"
+print(frase.startswith("Coding")) # True
+
+# 24. ¿'Coding For All' termina con una subcadena ' coding' ?
+
+print(frase.endswith("Coding")) # False
+
+# %%
+# 25. 'Codificación para todos', elimina los espacios finales izquierdo y derecho en la cadena dada.
+
+frase = " Codificación para todos "
+print(frase.strip(" ")) # Codificación para todos
+
+# %%
+# 26. ¿Cuál de las siguientes variables devuelve Verdadero cuando usamos el método isidentifier()?
+# 30 días de Python
+# Treinta días de Python
+
+variable = "30díasdePython"
+print(variable.isidentifier()) # False
+
+variable = "treintadíasdePython"
+print(variable.isidentifier()) # True
+# %%
+# 27. La siguiente lista contiene los nombres de algunas bibliotecas de Python: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Únase a la lista con un hash con una cadena de espacios.
+
+lista = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print(" ".join(lista)) # Django Flask Bottle Pyramid Falcon
