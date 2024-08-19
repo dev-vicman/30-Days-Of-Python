@@ -99,3 +99,42 @@ print(f"El numero es divisible entre 2: {numero_es_divisible}")
 
 # %%
 # 14. Check if the floor division of 7 by 3 is equal to the int converted value of 2.7
+
+floor_division = 7 // 3
+int_converted = int(2.7)
+print(floor_division == int_converted)
+# %%
+# 15. Check if type of '10' is equal to type of 10
+
+print(type("10") == type(10))
+
+# %%
+# 16. Check if int('9.8') is equal to 10
+
+print(int(9.8) == 10)
+# %%
+# 17. Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?
+
+# Solicitar al usuario que ingrese la cantidad de horas trabajadas
+horas = int(input("Introduce la cantidad de horas trabajadas: "))
+
+# Solicitar al usuario que ingrese el valor de su hora de trabajo
+valor_hora = int(input("Ingresa el valor de la hora: "))
+
+# Calcular el total del pago al multiplicar el valor hora por las horas trabajadas
+total_pago = horas * valor_hora
+
+# Mostrar el resultado
+print(f"Tu pago sera de {total_pago}")
+
+# %%
+# 18. Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
+
+# Solicitar al usuario que ingrese el número de años que ha vivido
+años_vividos = int(input("Introduce el número de años que has vivido: "))
+
+# Calcular el número de segundos que ha vivido
+segundos_vividos = años_vividos * 365 * 24 * 60 * 60
+
+# Mostrar el resultado
+print(f"Has vivido durante {segundos_vividos} segundos.")
