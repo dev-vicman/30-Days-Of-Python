@@ -1,13 +1,13 @@
-# 30 dias de Python 🐍
+# 30 días de Python 📆🐍
 ¡Bienvenido a mi reto de 30 Días de Python! En este repositorio, documentaré mi progreso a lo largo de 30 días consecutivos, donde aprenderé y practicaré Python a través de una serie de ejercicios y proyectos. 
 
 ## Indice
 
-* [Dia 1: Hello World](./day_1/README.MD)
-* [Dia 2: Variables, funciones integradas](./day_2/README.MD)
-* [Dia 3: Operadores](./day_3/README.MD)
-* [Dia 4: Strings (Cadenas de texto)](./day_4/README.MD)
-* [Dia 5: Listas](./day_5/README.MD)
+* [Día 1: Hello World](./day_1/README.MD)
+* [Día 2: Variables, funciones integradas](./day_2/README.MD)
+* [Día 3: Operadores](./day_3/README.MD)
+* [Día 4: Strings (Cadenas de texto)](./day_4/README.MD)
+* [Día 5: Listas](./day_5/README.MD)
 
 ## Cómo Usar Este Repositorio 🛠️
 
