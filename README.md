@@ -7,7 +7,7 @@
 * [Día 2: Variables, funciones integradas](./day_2/README.MD)
 * [Día 3: Operadores](./day_3/README.MD)
 * [Día 4: Strings (Cadenas de texto)](./day_4/README.MD)
-* [Día 5: Listas](./day_5/README.MD)
+* [Día 5: Listas](./day_5/README.md)
 
 ## Cómo Usar Este Repositorio 🛠️
 
