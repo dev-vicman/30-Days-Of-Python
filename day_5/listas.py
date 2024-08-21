@@ -125,7 +125,32 @@ max_age = ages[-1]
 
 print(f"La edad minima es {min_age} y la edad maxima es {max_age}")
 
+# %%
 # 1.2 Encuentra la edad media (un elemento intermedio o dos elementos intermedios divididos por dos
 
-print(ages)
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# Ordenar la lista
+ages.sort()
+
+# Calcular la mediana
+n = len(ages)
+median_age = (ages[(n-1)//2] + ages[n//2]) / 2
+
+print(f"La edad media (mediana) es {median_age}")
+
 # %%
+# 1.3 Find the average age (sum of all items divided by their number )
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# sumar los elementos de la lista
+sum_ages = sum(ages)
+
+# Calculamos el promedio de las edades
+average_ages = sum_ages/len(ages)
+
+# Mostramos en pantalla el resultado
+print(average_ages)
+# %%
+
