@@ -109,3 +109,23 @@ it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Am
 del it_companies[-3:]
 print(it_companies) # ['Facebook', 'Google', 'Microsoft', 'Apple']
 # %%
+
+""" Exercises: Level 2 """
+
+# %%
+# 1. The following is a list of 10 students ages:
+
+ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+# 1.1 Sort the list and find the min and max age
+
+ages.sort()
+min_age = ages[0]
+max_age = ages[-1]
+
+print(f"La edad minima es {min_age} y la edad maxima es {max_age}")
+
+# 1.2 Encuentra la edad media (un elemento intermedio o dos elementos intermedios divididos por dos
+
+print(ages)
+# %%
