@@ -64,23 +64,3 @@ print(food_stuff_tp, type(food_stuff_tp))
 
 food_stuff_lt = list(food_stuff_tp)
 print(food_stuff_lt, type(food_stuff_lt))
-
-# Extraiga el elemento o los elementos del medio de la tupla food_stuff_tp o de la lista food_stuff_lt.
-
-
-# Separa los primeros tres elementos y los últimos tres elementos de la lista food_staff_lt
-
-
-# Eliminar la tupla food_staff_tp por completo
-
-
-# Comprueba si un elemento existe en una tupla:
-
-
-# Comprueba si 'Estonia' es un país nórdico
-
-# Comprueba si 'Islandia' es un país nórdico
-
-# nordic_countries = ('Denmark', 'Finland','Iceland', 'Norway', 'Sweden')
-
-# %%
