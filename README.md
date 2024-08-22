@@ -8,7 +8,7 @@
 * [Día 3: Operadores](./day_3/README.MD)
 * [Día 4: Strings (Cadenas de texto)](./day_4/README.MD)
 * [Día 5: Listas](./day_5/README.md)
-* [Día 6: Tuplas](./day_6/README.md)
+* [Día 6: Tuplas](./day_6/README.MD)
 
 ## Cómo Usar Este Repositorio 🛠️
 
