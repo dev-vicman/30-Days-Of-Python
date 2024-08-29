@@ -9,7 +9,7 @@
 * [Día 4: Strings (Cadenas de texto)](./day_4/README.MD)
 * [Día 5: Listas](./day_5/README.md)
 * [Día 6: Tuplas](./day_6/README.MD)
-* [Día 7: Conjutos](./day_7/README.MD)
+* [Día 7: Conjuntos](./day_7/README.MD)
 
 ## Cómo Usar Este Repositorio 🛠️
 
