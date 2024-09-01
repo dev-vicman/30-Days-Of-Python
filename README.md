@@ -11,6 +11,7 @@
 * [Día 6: Tuplas](./day_6/README.MD)
 * [Día 7: Conjuntos](./day_7/README.MD)
 * [Día 8: Diccionarios](./day_8/README.MD)
+* [Día 9: Condicionales](./day_9/README.MD)
 
 ## Cómo Usar Este Repositorio 🛠️
 
