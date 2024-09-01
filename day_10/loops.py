@@ -1,5 +1,8 @@
 """ Day 10: 30 Days of python programming """
 
+from countries import countries
+from countries_data import countries_data
+
 # * Ejercicios: Nivel 1
 
 # Itera del 0 al 10 usando el bucle for, haz lo mismo usando el bucle while.
@@ -127,9 +130,24 @@ print(f"La suma de numeros pares es {suma_pares} y la de numeros impares es {sum
 # The sum of all evens is 2550. And the sum of all odds is 2500.
 
 # * Ejercicios: Nivel 3
-# Vaya a la carpeta de datos y utilice el archivo countries.py . Recorra los países y extraiga todos los países que contengan la palabra land .
+# Vaya a la carpeta de datos y utilice el archivo countries.py . Recorra los países y extraiga todos los países que contengan la palabra land.
+
+for pais in countries:
+    if "land" in pais:
+        print(pais)
 
 # Esta es una lista de frutas, ['banana', 'naranja', 'mango', 'limón'] invierte el orden usando un bucle.
+
+frutas = ['banana', 'naranja', 'mango', 'limón']
+
+frutas_invertidas = []
+
+for fruta in range(len(frutas) - 1,-1,-1):
+    frutas_invertidas.append(frutas[fruta])
+
+print(frutas)
+print(frutas_invertidas)
+
 
 # Vaya a la carpeta de datos y utilice el archivo countries_data.py .
 # ¿Cuál es el número total de idiomas en los datos?
