@@ -4,15 +4,12 @@
 
 # 1. Obtenga la entrada del usuario mediante input(“Ingrese su edad: ”). Si el usuario tiene 18 años o más, proporcione comentarios: Tiene la edad suficiente para conducir. Si es menor de 18 años, proporcione comentarios para esperar la cantidad de años faltantes. Salida:
 
-print("\nComprobar si puedes conducir")
-print("------------------------------\n")
 edad = int(input("Ingrese su edad: "))
 
 if edad >= 18:
     print("Tienes edad suficiente para conducir")
 else:
     print(f"Necesitas cumplir {18 - edad} años mas para poder conducir")
-print("------------------------------")
 
 # 2. Compara los valores de my_age y your_age usando if … else. ¿Quién es mayor (tú o yo)? Usa input(“Ingresa tu edad: ”) para obtener la edad como entrada. Puedes usar una condición anidada para imprimir 'year' para una diferencia de edad de 1 año, 'years' para diferencias mayores y un texto personalizado si my_age = your_age.
 
@@ -41,12 +38,12 @@ else:
 
 
 """ ### Exercises: Level 2 """
-# 3. Escriba un código que califique a los estudiantes según sus puntuaciones:
+""" # 3. Escriba un código que califique a los estudiantes según sus puntuaciones:
 # 90-100, A
 # 70-89, B
 # 60-69, C
 # 50-59, D
-# 0-49, F
+# 0-49, F """
 
 calificacion_estudiante = int(input("Ingrese la calificacion del estudiante: "))
 
@@ -62,12 +59,6 @@ elif calificacion_estudiante >= 0 and calificacion_estudiante <= 49:
     print("El estudiante recibio una `F`")
 else:
     print("La calificacion introducida es invalida")
-
-# 4. Comprueba si la estación es Otoño, Invierno, Primavera o Verano. Si la entrada del usuario es: Septiembre, Octubre o Noviembre, la estación es Otoño. Diciembre, Enero o Febrero, la estación es Invierno. Marzo, Abril o Mayo, la estación es Primavera. Junio, Julio o Agosto, la estación es Verano.
-
-# La siguiente lista contiene algunas frutas:
-# fruits = ['banana', 'orange', 'mango', 'lemon']
-# Si una fruta no existe en la lista, agréguela a la lista e imprima la lista modificada. Si la fruta existe, imprima ('Esa fruta ya existe en la lista')
 
 """ Ejercicios: Nivel 3 """
 # Aquí tenemos un diccionario de personas. ¡Siéntete libre de modificarlo!
