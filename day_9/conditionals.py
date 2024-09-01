@@ -72,20 +72,61 @@ else:
 """ Ejercicios: Nivel 3 """
 # Aquí tenemos un diccionario de personas. ¡Siéntete libre de modificarlo!
 
-#    person={
-#    'first_name': 'Asabeneh',
-#    'last_name': 'Yetayeh',
-#    'age': 250,
-#    'country': 'Finland',
-#    'is_marred': True,
-#    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
-#    'address': {
-#        'street': 'Space street',
-#        'zipcode': '02210'
-#    }
-#    }
-# * Check if the person dictionary has skills key, if so print out the middle skill in the skills list.
-# * Check if the person dictionary has skills key, if so check if the person has 'Python' skill and print out the result.
-# * If a person skills has only JavaScript and React, print('He is a front end developer'), if the person skills has Node, Python, MongoDB, print('He is a backend developer'), if the person skills has React, Node and MongoDB, Print('He is a fullstack developer'), else print('unknown title') - for more accurate results more conditions can be nested!
-# * If the person is married and if he lives in Finland, print the information in the following format:
-#    Asabeneh Yetayeh lives in Finland. He is married.
+person={
+'first_name': 'Asabeneh',
+'last_name': 'Yetayeh',
+'age': 250,
+'country': 'Finland',
+'is_marred': True,
+'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+'address': {
+    'street': 'Space street',
+    'zipcode': '02210'
+}
+}
+
+# * Verifica si el diccionario de la persona tiene la clave "habilidades"; si es así, imprime la habilidad del medio en la lista de habilidades.
+
+if "skills" in person:
+    # Obteniendo las skills del diccionario
+    skill = person["skills"]
+    # Calculando el indice medio de skill
+    indice_medio = len(skill) // 2
+    # Mostramos en pantalla la skill de en medio.
+    print(f"La habilidad de en medio es {skill[indice_medio]}")
+
+# * Verifica si el diccionario de la persona tiene la clave "habilidades"; si es así, verifica si la persona tiene la habilidad 'Python' e imprime el resultado.
+
+if "skills" in person:
+    if "Python" in person["skills"]:
+        print("si esta Python")
+    else:
+        print("Python no esta en skills")
+
+# * Si las habilidades de una persona solo incluyen JavaScript y React, imprime('Es un desarrollador frontend'); si las habilidades de la persona incluyen Node, Python, MongoDB, imprime('Es un desarrollador backend'); si las habilidades de la persona incluyen React, Node y MongoDB, imprime('Es un desarrollador fullstack'); de lo contrario, imprime('título desconocido') - para resultados más precisos, ¡se pueden anidar más condiciones!
+
+if 'skills' in person:
+    habilidades = person['skills']
+    
+    if set(habilidades) == {'JavaScript', 'React'}:
+        print('Es un desarrollador frontend')
+    elif {'Node', 'Python', 'MongoDB'}.issubset(habilidades):
+        print('Es un desarrollador backend')
+    elif {'React', 'Node', 'MongoDB'}.issubset(habilidades):
+        print('Es un desarrollador fullstack')
+    else:
+        print('título desconocido')
+else:
+    print('No se encontraron habilidades en el diccionario.')
+
+
+# * Si la persona está casada y vive en Finlandia, imprime la información en el siguiente formato: "Asabeneh Yetayeh vive en Finlandia. El esta casado"
+
+if person['is_marred'] == True and person['country'] == "Finland":
+    print("Asabeneh Yetayeh vive en Finlandia. El esta casado")
+elif person['is_marred'] == True and person['country'] != "Finland":
+    print("Asabeneh Yetayeh esta casado pero no vive en Finlandia")
+elif person['is_marred'] != True and person['country'] == "Finland":
+    print("Asabeneh Yetayeh vive en Finlandia. El no esta casado")
+else:
+    print("Asabeneh Yetayeh no vive en Finlandia. El no esta casado")
