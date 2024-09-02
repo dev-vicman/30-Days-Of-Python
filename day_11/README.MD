@@ -6,9 +6,21 @@
 
 ```python
 def add_two_numbers(numero_1, numero_2):
+    """
+    Calcula la Suma de 2 numeros
+    
+    Argumentos:
+        
+        numero_1 (int, Float): El primer numero a sumar    
+        numero_2 (int, Float): El segundo numero a sumar
+        
+    Return:
+
+        int, float  La suma de 2 numeros    
+    """
     return numero_1 + numero_2
 
-print(f'La suma de los numeros es: {add_two_numbers(4,6)}')
+print(f'La suma de los numeros es: {add_two_numbers(4, 6)}')
 ```
 ##### Print Output:
     La suma de los numeros es: 10
@@ -17,6 +29,17 @@ print(f'La suma de los numeros es: {add_two_numbers(4,6)}')
 
 ```python
 def area_del_circulo(radio):
+    """
+    Calcula el area de un circulo
+    
+    Argumentos:
+    
+        radio (int, float): El radio de el circulo
+        
+    Return:
+
+        int, float: El area de un circulo
+    """
     area = 3.1416 * radio * radio
     return round(area,2)
 
