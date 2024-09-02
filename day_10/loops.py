@@ -7,37 +7,23 @@ from countries_data import countries_data
 
 # Itera del 0 al 10 usando el bucle for, haz lo mismo usando el bucle while.
 
-print("\nIterando usando el ciclo `for`")
-
 for i in range(0,11):
     print(i)
-
-print("--------------------------------")
-
-print("\nIterando usando el ciclo `while`")
 
 contador = 0
 while contador < 11:
     print(contador)
     contador += 1
 
-print("--------------------------------")
-
 # Itera de 10 a 0 usando el bucle for, haz lo mismo usando el bucle while.
-
-print("\nIterando usando el ciclo `for`")
 
 for i in range(10,0,-1):
     print(i)
-
-print("\nIterando usando el ciclo `while`")
 
 contador = 10
 while contador > -1:
     print(contador)
     contador -= 1
-
-print("--------------------------------")
 
 # Escriba un bucle que realice siete llamadas a print(), de modo que obtengamos en la salida el siguiente triángulo:
 
@@ -112,7 +98,7 @@ for i in range(0,101):
 suma_total = 0
 for i in range(0,101):
     suma_total += i
-print(f"La suma de todos los numeros del 0 al 100 es: {suma_total}")
+print(f"\nLa suma de todos los numeros del 0 al 100 es: {suma_total}")
 
 #Utilice el bucle for para iterar de 0 a 100 e imprimir la suma de todos los números pares y la suma de todos los números impares.
 
@@ -125,7 +111,7 @@ for i in range(0,101):
     else:
         suma_impares += i
 
-print(f"La suma de numeros pares es {suma_pares} y la de numeros impares es {suma_impares}")
+print(f"\nLa suma de numeros pares es {suma_pares} y la de numeros impares es {suma_impares}")
 
 # The sum of all evens is 2550. And the sum of all odds is 2500.
 
@@ -151,5 +137,12 @@ print(frutas_invertidas)
 
 # Vaya a la carpeta de datos y utilice el archivo countries_data.py .
 # ¿Cuál es el número total de idiomas en los datos?
-# Encuentra los diez idiomas más hablados a partir de los datos
-# Encuentra los 10 países más poblados del mundo
+
+numero_idiomas = []
+
+for pais in countries_data:
+    for idioma in pais["languages"]:
+        numero_idiomas.append(idioma)
+
+set(numero_idiomas)
+print(f"\nEl numero total de idiomas es {len(numero_idiomas)} idiomas distintos")
