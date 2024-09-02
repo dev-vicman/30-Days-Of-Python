@@ -1,4 +1,4 @@
-# 💻 Exercises - Day 9
+# 💻 Exercises - Day 10
 
 ## Ejercicios: Nivel 1
 
