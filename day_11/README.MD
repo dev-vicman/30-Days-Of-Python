@@ -8,19 +8,24 @@ def add_two_numbers(numero_1, numero_2):
 
 print(f'La suma de los numeros es: {add_two_numbers(4,6)}')
 ```
-#### Print Output:
+##### Print Output:
     La suma de los numeros es: 10
+---
+### 2. El área de un círculo se calcula de la siguiente manera: área = π x r x r. Escribe una función que calcule área_del_círculo.
 
-# 2. El área de un círculo se calcula de la siguiente manera: área = π x r x r. Escribe una función que calcule área_del_círculo.
-
+```python
 def area_del_circulo(radio):
     area = 3.1416 * radio * radio
     return round(area,2)
 
-print(f'El area del circulo es: {area_del_circulo(34)}') # El area del circulo es: 3631.69
+print(f'El area del circulo es: {area_del_circulo(34)}')
+```
+##### Print Output:
+    El area del circulo es: 3631.69
+---
+### 3. Escriba una función llamada add_all_nums que tome una cantidad arbitraria de argumentos y sume todos los argumentos. Verifique si todos los elementos de la lista son de tipo numérico. Si no es así, proporcione una respuesta razonable.
 
-# 3. Escriba una función llamada add_all_nums que tome una cantidad arbitraria de argumentos y sume todos los argumentos. Verifique si todos los elementos de la lista son de tipo numérico. Si no es así, proporcione una respuesta razonable.
-
+```python
 def add_all_nums(*numeros):
     suma = 0
     for num in numeros:
@@ -31,18 +36,28 @@ def add_all_nums(*numeros):
     return suma
 
 resultado = add_all_nums(1, 2, 'a', 3.5)
-print(f"La suma de los números es: {resultado}") # La suma de los números es: 6.5
+print(f"La suma de los números es: {resultado}")
+```
+##### Print Output:
+    La suma de los números es: 6.5
+---
 
-# 4. La temperatura en °C se puede convertir a °F usando esta fórmula: °F = (°C x 9/5) + 32. Escriba una función que convierta °C a °F, convert_celsius_to-fahrenheit.
+### 4. La temperatura en °C se puede convertir a °F usando esta fórmula: °F = (°C x 9/5) + 32. Escriba una función que convierta °C a °F, convert_celsius_to-fahrenheit.
 
+```python
 def convert_celsius_to_fahrenheit(grados):
     farenheit = (grados * 1.8) + 32
     return farenheit
 
-print(f'La temparatura es de {convert_celsius_to_fahrenheit(40)} farenheit') # La temparatura es de 104.0 farenheit
+print(f'La temparatura es de {convert_celsius_to_fahrenheit(40)} farenheit')
+```
+##### Print Output:
+    La temparatura es de 104.0 farenheit
+---
 
-# 5. Escriba una función llamada check-season, toma un parámetro de mes y devuelve la temporada: Otoño, Invierno, Primavera o Verano.
+### 5. Escriba una función llamada check-season, toma un parámetro de mes y devuelve la temporada: Otoño, Invierno, Primavera o Verano.
 
+```python
 def check_season(mes):
     primavera = ['Marzo','Abril','Mayo']
     verano = ['Junio','Julio','Agosto']
@@ -60,4 +75,10 @@ def check_season(mes):
     else:
         return 'Mes no valido'
 
-print(f'La estacion es {check_season("Abril")}') # La estacion es Primavera
+print(f'La estacion es {check_season("Abril")}')
+```
+##### Print Output:
+    La estacion es Primavera
+---
+
+### 6. 
