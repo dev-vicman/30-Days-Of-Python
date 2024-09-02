@@ -1,5 +1,7 @@
 # 💻 Ejercicios: Día 11
 
+## Ejercicios: Nivel 1
+
 ### 1. Declara una función add_two_numbers . Toma dos parámetros y devuelve una suma.
 
 ```python
