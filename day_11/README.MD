@@ -106,4 +106,136 @@ print(f'La estacion es {check_season("Abril")}')
     La estacion es Primavera
 ---
 
-### 6. 
+### 6. Escriba una función llamada calculate_slope que devuelva la pendiente de una ecuación lineal
+
+```python
+def calcular_pendiente(x1, y1, x2, y2):
+
+    # Verifica si los puntos tienen la misma coordenada x para evitar división por cero
+    if x1 == x2:
+        return "La pendiente es indefinida (línea vertical)"
+
+    # Calcula la pendiente
+    pendiente = (y2 - y1) / (x2 - x1)
+    return round(pendiente,2)
+
+# Ejemplo de uso
+x1, y1 = 2, 3
+x2, y2 = 3, 8
+
+pendiente = calcular_pendiente(x1, y1, x2, y2)
+print(f"La pendiente de la línea que pasa por los puntos ({x1}, {y1}) y ({x2}, {y2}) es: {pendiente}")
+```
+##### Print Output:
+    La pendiente de la línea que pasa por los puntos (2, 3) y (3, 8) es: 5.0
+
+### 7. Declara una función llamada print_list. Esta toma una lista como parámetro e imprime cada elemento de la lista.
+
+```python
+def print_list(lista):
+    for i in lista:
+        print(i)
+
+lista = ["dedo","mano","oreja"]
+print_list(lista)
+```
+##### Print Output:
+    dedo
+    mano
+    oreja
+
+### 8. Declara una función llamada reverse_list. Toma una matriz como parámetro y devuelve el inverso de la matriz (usa bucles).
+
+```python
+def reverse_list(matriz):
+    # Crear una lista vacía para almacenar los elementos en orden inverso
+    lista_invertida = []
+
+    # Recorremos la lista desde el último elemento hasta el primero
+    for i in range(len(matriz) - 1, -1, -1):
+        # Añadimos cada elemento a la lista invertida
+        lista_invertida.append(matriz[i])
+    
+    # Devolvemos la lista invertida
+    return lista_invertida
+
+### Ejemplo de uso
+lista_original = [[1,2,4],[3,4,5],23,"carta","mangos"]
+lista_invertida = reverse_list(lista_original)
+
+print("Lista original:", lista_original)
+print("Lista invertida:", lista_invertida)
+```
+##### Print Output:
+    Lista original: [[1, 2, 4], [3, 4, 5], 23, 'carta', 'mangos']
+    Lista invertida: ['mangos', 'carta', 23, [3, 4, 5], [1, 2, 4]]
+
+## Ejercicios: Nivel 2
+
+### 9. Declara una función denominada evens_and_odds . Toma un entero positivo como parámetro y cuenta la cantidad de pares e impares en el número.
+
+```python
+def evens_and_odds(numeros):    
+    # Inicializamos las variables pares e impares para sumar la cantidad de numeros de cada uno
+    pares = 0
+    impares = 0
+    
+    # Recorremos el arreglo evaluando la condicion de si es par o impar
+    for i in range(numeros + 1):
+        if i % 2 == 0: # Si la condicion es True, cuenta un numero par
+            pares += 1 
+        elif i % 2 != 0: # Si la condicion es True, cuenta un numero impar
+            impares += 1
+    
+    # Mostramos en pantalla
+    print(f'La cantidad de numeros pares es {pares}')
+    print(f'La cantidad de numeros impares es {impares}')
+    
+evens_and_odds(100)
+```
+##### Print Output:
+    La cantidad de numeros pares es 51
+    La cantidad de numeros impares es 50
+
+### 10. Llama a tu función factorial, toma un número entero como parámetro y devuelve un factorial del número.
+
+```python
+def factorial(numero):
+    # Inicializamos total a 1 porque el factorial se calcula con multiplicaciones
+    total = 1
+    # Recorremos todos los números de 1 a 'numero' (inclusive)
+    for num in range(1, numero + 1):
+        total *= num  # Multiplicamos 'total' por cada número en el rango
+    return total  # Devolvemos el resultado final
+
+# Ejemplo de uso
+print(factorial(5))
+```
+##### Print Output:
+    120
+
+### 11. Llama a tu función is_empty , toma un parámetro y verifica si está vacío o no
+
+```python
+def is_empty(parametro):
+    # Verifica si el parámetro está vacío
+    if not parametro:
+        return True
+    else:
+        return False
+
+# Ejemplos de uso
+print(is_empty([]))       # True, porque la lista está vacía
+print(is_empty([1, 2, 3])) # False, porque la lista no está vacía
+print(is_empty(""))       # True, porque la cadena está vacía
+print(is_empty("texto"))  # False, porque la cadena no está vacía
+print(is_empty({}))       # True, porque el diccionario está vacío
+print(is_empty({"key": "value"})) # False, porque el diccionario no está vacío
+```
+### Print Output:
+    True
+    False
+    True
+    False
+    True
+    False
