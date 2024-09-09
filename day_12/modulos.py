@@ -47,7 +47,11 @@ print(rgb_color_gen())
 
 """ 3. Escriba una función list_of_hexa_colors que devuelva cualquier número de colores hexadecimales en una matriz (seis números hexadecimales escritos después de #. El sistema de numeración hexadecimal está formado por 16 símbolos, del 0 al 9 y las primeras 6 letras del alfabeto, af. Consulte la tarea 6 para ver ejemplos de salida). """
 
+# def generar_hexa_colors():
+hexa = "0123456789ABCDEF"
 
+#for caracter in hexa:
+    
 
 """ 5. Escriba una función list_of_rgb_colors que devuelva cualquier número de colores RGB en una matriz. """
 
