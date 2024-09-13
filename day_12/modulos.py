@@ -47,25 +47,36 @@ print(rgb_color_gen())
 
 """ 3. Escriba una función list_of_hexa_colors que devuelva cualquier número de colores hexadecimales en una matriz (seis números hexadecimales escritos después de #. El sistema de numeración hexadecimal está formado por 16 símbolos, del 0 al 9 y las primeras 6 letras del alfabeto, af. Consulte la tarea 6 para ver ejemplos de salida). """
 
-# def generar_hexa_colors():
-hexa = "0123456789ABCDEF"
+def generar_hexa_colores():
+    hex_chars = '0123456789abcdef'
+    color = '#' + ''.join(random.choice(hex_chars) for _ in range(6))
+    return color
 
-#for caracter in hexa:
-    
+print(generar_hexa_colores())
+
+def list_of_hexa_colors(num_colores):
+    colores = []
+    for _ in range(num_colores):
+        color = generar_hexa_colores()
+        colores.append(color)
+    return colores
+
+print(list_of_hexa_colors(4))
 
 """ 5. Escriba una función list_of_rgb_colors que devuelva cualquier número de colores RGB en una matriz. """
 
-""" 6. Escriba una función generate_colors que pueda generar cualquier cantidad de colores hexadecimales o rgb.
-    generate_colors('hexa', 3) # ['#a3e12f','#03ed55','#eb3d2b'] 
-    generate_colors('hexa', 1) # ['#b334ef']
-    generate_colors('rgb', 3)  # ['rgb(5, 55, 175','rgb(50, 105, 100','rgb(15, 26, 80'] 
-    generate_colors('rgb', 1)  # ['rgb(33,79, 176)'] """
+def generate_rgb_color():
+    return (random.randint(0, 255), 
+            random.randint(0, 255), 
+            random.randint(0, 255))
 
-#? Ejercicios: Nivel 3
+def list_of_rgb_colors(num_colores):
+    colores = []
+    for _ in range(num_colores):
+        color = generate_rgb_color()
+        colores.append(color)
+    return colores
 
-""" 7. Llama a tu función shuffle_list, toma una lista como parámetro y devuelve una lista aleatoria """
-
-
-""" 8. Escriba una función que devuelva una matriz de siete números aleatorios en un rango de 0 a 9. Todos los números deben ser únicos. """
+print(list_of_rgb_colors(4))
 
 
