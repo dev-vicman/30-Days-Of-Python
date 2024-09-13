@@ -1,4 +1,4 @@
-
+""" Day 13: 30 Days of python programming """
 #? 1. Filtrar solo los negativos y ceros en la lista usando la comprensión de listas
 
 numeros = [-4, -3, -2, -1, 0, 2, 4, 6]
