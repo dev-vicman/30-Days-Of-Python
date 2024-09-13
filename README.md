@@ -13,6 +13,9 @@
 * [Día 8: Diccionarios](./day_8/README.MD)
 * [Día 9: Condicionales](./day_9/README.MD)
 * [Día 10: Ciclos](./day_10/README.MD)
+* [Día 11: Funciones](./day_11/README.MD)
+* [Día 12: Modulos](./day_12/README.MD)
+* [Día 13: comprensiones de listas](./day_13/README.MD)
 
 ## Cómo Usar Este Repositorio 🛠️
 
