@@ -1,30 +1,30 @@
 """ Day 6: 30 Days of python programming """
 
-#* Ejercicios: Nivel 1
+# * Ejercicios: Nivel 1
 
-#? Crear una tupla vacía
+# ? Crear una tupla vacía
 
-mi_tupla = (1,2,3,4,5)
+mi_tupla = (1, 2, 3, 4, 5)
 
 # %%
-#? Crea una tupla que contenga los nombres de tus hermanas y tus hermanos (los hermanos imaginarios están bien)
+# ? Crea una tupla que contenga los nombres de tus hermanas y tus hermanos (los hermanos imaginarios están bien)
 
 hermanas = ("Maria", "Carla", "Gabriela", "Daniela")
 hermanos = ("Rafael", "Arturo")
 
 
-#? Unir tuplas de hermanos y hermanas y asignarlas a hermanos
+# ? Unir tuplas de hermanos y hermanas y asignarlas a hermanos
 list(hermanos)
 hermanos = hermanas + hermanos
 print(hermanos)
 
 
-#? ¿Cuántos hermanos tienes?
+# ? ¿Cuántos hermanos tienes?
 
 print(f"Tengo {len(hermanos)} hermanos")
 
 
-#? Modifica la tupla de hermanos y agrega el nombre de tu padre y madre y asígnalo a family_members
+# ? Modifica la tupla de hermanos y agrega el nombre de tu padre y madre y asígnalo a family_members
 
 # Transformamos la Tupla en una lista
 hermanos = list(hermanos)
@@ -39,10 +39,10 @@ family_members = hermanos
 # Mostramos en pantalla
 print(family_members)
 
-#* Ejercicios: Nivel 2
+# * Ejercicios: Nivel 2
 
 # %%
-#? Desempaquetar hermanos y padres de family_members
+# ? Desempaquetar hermanos y padres de family_members
 
 *hermanos, madre, padre = family_members
 
@@ -55,7 +55,7 @@ print(padre)
 
 # Declarando las tuplas
 frutas = ("Manzana", "Pera", "Mango")
-productos_animales = ("Huevos", "Leche","Carne")
+productos_animales = ("Huevos", "Leche", "Carne")
 
 # Asignando frutas y productos animales a food_stuff_tp
 food_stuff_tp = frutas + productos_animales
