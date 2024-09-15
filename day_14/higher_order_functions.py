@@ -1,0 +1,94 @@
+""" Day 14: 30 Days of python programming """
+
+# Definiendo las listas que utilizaremos para los ejercicios.
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+#! Ejercicios de Nivel 1
+
+# ? 1. Explique la diferencia entre mapa, filtro y reducción.
+'''
+map(): La función map() toma una función y un iterable como parámetros, y devuelve un nuevo iterable donde cada elemento es el resultado de aplicar la función a cada elemento del iterable original. En esencia, map() te permite aplicar una transformación a cada elemento de una lista.
+
+filter(): La función filter() toma una función y un iterable, y devuelve un nuevo iterable que contiene solo los elementos del iterable original para los cuales la función devuelve True. En otras palabras, filter() te permite seleccionar elementos de una lista basados en una condición.
+
+reduce(): La función reduce() toma una función y un iterable, y devuelve un único valor. La función que se pasa a reduce() debe tomar dos argumentos y devolver un único valor. reduce() aplica la función a los elementos del iterable de dos en dos, acumulando el resultado hasta que se procesan todos los elementos y se obtiene un único valor.
+'''
+
+# ? 2. Explique la diferencia entre función de orden superior, cierre y decorador.
+
+'''
+Función de Orden Superior:
+Una función de orden superior es una función que puede tomar una o más funciones como argumentos o devolver una función como resultado.
+Permiten un manejo flexible de funciones, fomentando la reutilización de código y la creación de abstracciones más potentes.
+
+Cierre:
+Un cierre ocurre cuando una función anidada accede a una variable de su función externa (función envolvente) incluso después de que la función externa ha finalizado su ejecución.●
+La función interna "recuerda" el valor de la variable en el entorno de la función externa.●
+Ejemplo: En el código proporcionado en la fuente, la función add dentro de la función add_ten es un cierre porque accede a la variable ten incluso después de que add_ten haya retornado.
+
+Decorador:
+Un decorador es una función de orden superior que modifica el comportamiento de otra función sin cambiar su código directamente.
+Toma una función como argumento, la envuelve con funcionalidad adicional y retorna la función modificada.
+Se utiliza la sintaxis "@" para aplicar un decorador a una función.
+Ejemplo: En la fuente, uppercase_decorator es un decorador que convierte a mayúsculas el resultado de la función greeting.
+
+'''
+
+# ? 3. Defina una función de llamada antes de map, filter o reduce, vea los ejemplos.
+
+
+# ? 4. Utilice el bucle for para imprimir cada país en la lista de países.
+
+print("\nLa lista de paises contiene:")
+for pais in countries:
+    print(pais)
+
+# ? 5. Utilice for para imprimir cada nombre en la lista de nombres.
+
+print("\nLa lista de nombres contiene:")
+for nombre in names:
+    print(nombre)
+
+# ? 6. Utilice for para imprimir cada número en la lista de números.
+
+print("\nLa lista de numeros contiene:")
+for numero in numbers:
+    print(numero)
+
+#! Ejercicios de Nivel 2
+
+# ? 7. Utilice el mapa para crear una nueva lista cambiando cada país a mayúscula en la lista de países
+
+pais_mayuscula = list(map(lambda countries: countries.upper(), countries))
+print(pais_mayuscula)
+
+# ? 8. Utilice el mapa para crear una nueva lista cambiando cada número por su cuadrado en la lista de números.
+
+numero_cuadrado = list(map(lambda numbers: numbers ** 2, numbers))
+
+# ? 9. Utilice el mapa para cambiar cada nombre a mayúsculas en la lista de nombres
+
+nombre_mayuscula = list(map(lambda names: names.upper(), names))
+
+# ? 10. Utilice el filtro para filtrar los países que contienen la palabra "land".
+
+filtro_tierra = list(filter(lambda countries: 'land'.lower() in countries.lower(), countries))
+
+# ? 11. Utilice el filtro para filtrar los países que tengan exactamente seis caracteres.
+
+paises_seis_caracteres = list(filter(lambda countries: len(countries) == 6, countries))
+
+# ? 12. Utilice el filtro para filtrar los países que contengan seis letras o más en la lista de países.
+
+paises_seis_o_mas_letras = list(filter(lambda countries: len(countries) >= 6, countries))
+
+# ? 13. Utilice el filtro para filtrar los países que comienzan con 'E'
+
+paises_primer_letra_e = list(filter(lambda countries: countries.startswith('E'), countries))
+
+# ? 14. Encadenar dos o más iteradores de lista (por ejemplo, arr.map(callback).filter(callback).reduce(callback))
+
+
+
