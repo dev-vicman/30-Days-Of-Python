@@ -1,7 +1,11 @@
 """ Day 14: 30 Days of python programming """
 
+# importando las librerias
+from functools import reduce
+
 # Definiendo las listas que utilizaremos para los ejercicios.
-countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland',
+             'Venezuela', 'Argentina', 'Colombia', 'Costa Rica', 'Nicaragua', 'El Salvador']
 names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -74,21 +78,42 @@ nombre_mayuscula = list(map(lambda names: names.upper(), names))
 
 # ? 10. Utilice el filtro para filtrar los países que contienen la palabra "land".
 
-filtro_tierra = list(filter(lambda countries: 'land'.lower() in countries.lower(), countries))
+filtro_tierra = list(filter(lambda countries: 'land'.lower()
+                     in countries.lower(), countries))
 
 # ? 11. Utilice el filtro para filtrar los países que tengan exactamente seis caracteres.
 
-paises_seis_caracteres = list(filter(lambda countries: len(countries) == 6, countries))
+paises_seis_caracteres = list(
+    filter(lambda countries: len(countries) == 6, countries))
 
 # ? 12. Utilice el filtro para filtrar los países que contengan seis letras o más en la lista de países.
 
-paises_seis_o_mas_letras = list(filter(lambda countries: len(countries) >= 6, countries))
+paises_seis_o_mas_letras = list(
+    filter(lambda countries: len(countries) >= 6, countries))
 
 # ? 13. Utilice el filtro para filtrar los países que comienzan con 'E'
 
-paises_primer_letra_e = list(filter(lambda countries: countries.startswith('E'), countries))
+paises_primer_letra_e = list(
+    filter(lambda countries: countries.startswith('E'), countries))
 
 # ? 14. Encadenar dos o más iteradores de lista (por ejemplo, arr.map(callback).filter(callback).reduce(callback))
 
+# ? 15. Declare una función get_last_ten_countries que devuelva los últimos diez países de la lista de países.
 
 
+def get_last_ten_countries(lista):
+    '''Devuelve los ultimos 10 elementos de una lista'''
+    ultimos_diez = lista[-10:]
+    return ultimos_diez
+
+
+print('\nEstos son los últimos 10 países:\n',
+    get_last_ten_countries(countries))
+
+# ? 16. Utilice reducir para sumar todos los números en la lista de números.
+
+sumar_todos_los_numeros = reduce(lambda x, y: x + y, numbers)
+
+# ? 17 Utilice reduce para concatenar todos los países y producir esta oración: Estonia, Finlandia, Suecia, Dinamarca, Noruega e Islandia son países del norte de Europa.
+
+concatenar_paises = reduce(lambda pais_1, pais_2: pais_1 + ' ' + pais_2, countries)
