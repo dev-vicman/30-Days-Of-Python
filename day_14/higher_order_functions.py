@@ -4,8 +4,7 @@
 from functools import reduce
 
 # Definiendo las listas que utilizaremos para los ejercicios.
-countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland',
-             'Venezuela', 'Argentina', 'Colombia', 'Costa Rica', 'Nicaragua', 'El Salvador']
+countries = ['Estonia', 'Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland']
 names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -116,4 +115,10 @@ sumar_todos_los_numeros = reduce(lambda x, y: x + y, numbers)
 
 # ? 17 Utilice reduce para concatenar todos los países y producir esta oración: Estonia, Finlandia, Suecia, Dinamarca, Noruega e Islandia son países del norte de Europa.
 
-concatenar_paises = reduce(lambda pais_1, pais_2: pais_1 + ' ' + pais_2, countries)
+concatenar_paises = reduce(lambda pais_1, pais_2: pais_1 + ', ' + pais_2, countries[0:-2]) + " e" + " " + countries[-1] + " son países del norte de Europa."
+
+print('\n',concatenar_paises)
+
+# ? 18. Crea una función que devuelva un diccionario, donde las claves representan las letras iniciales de los países y los valores son la cantidad de nombres de países que comienzan con esa letra.
+
+iniciales = (list(map(lambda i: i[0], countries)))
