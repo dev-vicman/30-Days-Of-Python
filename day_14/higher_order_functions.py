@@ -28,15 +28,12 @@ Permiten un manejo flexible de funciones, fomentando la reutilización de códig
 
 Cierre:
 Un cierre ocurre cuando una función anidada accede a una variable de su función externa (función envolvente) incluso después de que la función externa ha finalizado su ejecución.●
-La función interna "recuerda" el valor de la variable en el entorno de la función externa.●
-Ejemplo: En el código proporcionado en la fuente, la función add dentro de la función add_ten es un cierre porque accede a la variable ten incluso después de que add_ten haya retornado.
+La función interna "recuerda" el valor de la variable en el entorno de la función externa.
 
 Decorador:
 Un decorador es una función de orden superior que modifica el comportamiento de otra función sin cambiar su código directamente.
 Toma una función como argumento, la envuelve con funcionalidad adicional y retorna la función modificada.
 Se utiliza la sintaxis "@" para aplicar un decorador a una función.
-Ejemplo: En la fuente, uppercase_decorator es un decorador que convierte a mayúsculas el resultado de la función greeting.
-
 '''
 
 # ? 3. Defina una función de llamada antes de map, filter o reduce, vea los ejemplos.
@@ -77,27 +74,21 @@ nombre_mayuscula = list(map(lambda names: names.upper(), names))
 
 # ? 10. Utilice el filtro para filtrar los países que contienen la palabra "land".
 
-filtro_tierra = list(filter(lambda countries: 'land'.lower()
-                     in countries.lower(), countries))
+filtro_tierra = list(filter(lambda countries: 'land'.lower() in countries.lower(), countries))
 
 # ? 11. Utilice el filtro para filtrar los países que tengan exactamente seis caracteres.
 
-paises_seis_caracteres = list(
-    filter(lambda countries: len(countries) == 6, countries))
+paises_seis_caracteres = list(filter(lambda countries: len(countries) == 6, countries))
 
 # ? 12. Utilice el filtro para filtrar los países que contengan seis letras o más en la lista de países.
 
-paises_seis_o_mas_letras = list(
-    filter(lambda countries: len(countries) >= 6, countries))
+paises_seis_o_mas_letras = list(filter(lambda countries: len(countries) >= 6, countries))
 
 # ? 13. Utilice el filtro para filtrar los países que comienzan con 'E'
 
-paises_primer_letra_e = list(
-    filter(lambda countries: countries.startswith('E'), countries))
+paises_primer_letra_e = list(filter(lambda countries: countries.startswith('E'), countries))
 
-# ? 14. Encadenar dos o más iteradores de lista (por ejemplo, arr.map(callback).filter(callback).reduce(callback))
-
-# ? 15. Declare una función get_last_ten_countries que devuelva los últimos diez países de la lista de países.
+# ? 14. Declare una función get_last_ten_countries que devuelva los últimos diez países de la lista de países.
 
 
 def get_last_ten_countries(lista):
@@ -109,16 +100,12 @@ def get_last_ten_countries(lista):
 print('\nEstos son los últimos 10 países:\n',
     get_last_ten_countries(countries))
 
-# ? 16. Utilice reducir para sumar todos los números en la lista de números.
+# ? 15. Utilice reducir para sumar todos los números en la lista de números.
 
 sumar_todos_los_numeros = reduce(lambda x, y: x + y, numbers)
 
-# ? 17 Utilice reduce para concatenar todos los países y producir esta oración: Estonia, Finlandia, Suecia, Dinamarca, Noruega e Islandia son países del norte de Europa.
+# ? 16 Utilice reduce para concatenar todos los países y producir esta oración: Estonia, Finlandia, Suecia, Dinamarca, Noruega e Islandia son países del norte de Europa.
 
 concatenar_paises = reduce(lambda pais_1, pais_2: pais_1 + ', ' + pais_2, countries[0:-2]) + " e" + " " + countries[-1] + " son países del norte de Europa."
 
 print('\n',concatenar_paises)
-
-# ? 18. Crea una función que devuelva un diccionario, donde las claves representan las letras iniciales de los países y los valores son la cantidad de nombres de países que comienzan con esa letra.
-
-iniciales = (list(map(lambda i: i[0], countries)))
