@@ -52,3 +52,13 @@ Usa el bloque except para capturar el error e imprimir: "Se capturó el error de
 
 Usa el bloque finally para siempre imprimir: "Recurso liberado: La conexión ha sido cerrada, sin importar el resultado."
 '''
+
+def acceso_recurso():
+    try:
+        resultado = 5/0
+    except:
+        print("Se capturo el error de la operacion")
+    finally:
+        print("Recurso liberado: La conexión ha sido cerrada, sin importar el resultado.")
+
+acceso_recurso()

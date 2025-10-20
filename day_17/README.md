@@ -45,3 +45,24 @@ try:
 except KeyError:
     print("Producto no encontrado. Verifique el nombre")
 ```
+
+### 4. Asegurando la Limpieza (finally)
+Escribe una función que simule el acceso a un recurso (como abrir una conexión).
+
+Dentro del try, simula una falla intencional (ej: resultado = 5 / 0).
+
+Usa el bloque except para capturar el error e imprimir: "Se capturó el error de la operación."
+
+Usa el bloque finally para siempre imprimir: "Recurso liberado: La conexión ha sido cerrada, sin importar el resultado."
+
+```python
+def acceso_recurso():
+    try:
+        resultado = 5/0
+    except:
+        print("Se capturo el error de la operacion")
+    finally:
+        print("Recurso liberado: La conexión ha sido cerrada, sin importar el resultado.")
+
+acceso_recurso()
+``` 
