@@ -16,9 +16,9 @@
 * [Día 11: Funciones](./day_11/README.MD)
 * [Día 12: Modulos](./day_12/README.MD)
 * [Día 13: comprensiones de listas](./day_13/README.MD)
-* [Dia 14: Funciones de orden superior ](day_14\readme.md)
-* [Dia 15: Errores en Python](day_15\README.MD)
-* [Dia 16: Fecha y Hora en Python](day_16\README.md)
+* [Dia 14: Funciones de orden superior ](./day_14/readme.md)
+* [Dia 15: Errores en Python](./day_15/README.MD)
+* [Dia 16: Fecha y Hora en Python](./day_16/README.md)
 
 ## Cómo Usar Este Repositorio 🛠️
 
